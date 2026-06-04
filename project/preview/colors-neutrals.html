@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body {
+    background: #F0F4FF;
+    padding: 24px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    min-height: 100vh;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  .col { display: flex; flex-direction: column; align-items: center; gap: 6px; flex: 1; }
+  .swatch {
+    width: 100%; height: 64px; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .swatch span { font-size: 11px; font-weight: 600; line-height: 1.2; }
+  .label { font-size: 10px; font-weight: 600; color: #1E3A8A; text-align: center; }
+  .hex { font-size: 9px; color: #64748B; text-align: center; }
+</style>
+</head>
+<body>
+  <div class="col">
+    <div class="swatch" style="background: #ffffff; color: #64748B;"><span>Aa</span></div>
+    <div class="label">White text on</div>
+    <div class="hex">#FFFFFF</div>
+  </div>
+  <div class="col">
+    <div class="swatch" style="background: #64748B; color: #ffffff;"><span>Aa</span></div>
+    <div class="label">Текст серый</div>
+    <div class="hex">#64748B</div>
+  </div>
+  <div class="col">
+    <div class="swatch" style="background: #94A3B8; color: #060F1E;"><span>Aa</span></div>
+    <div class="label">Текст мутный</div>
+    <div class="hex">#94A3B8</div>
+  </div>
+</body>
+</html>

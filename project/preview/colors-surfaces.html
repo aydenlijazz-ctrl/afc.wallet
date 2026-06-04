@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body {
+    background: #060F1E;
+    padding: 20px 24px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  .col { display: flex; flex-direction: column; align-items: center; gap: 6px; flex: 1; }
+  .swatch {
+    width: 100%; height: 68px; border-radius: 10px;
+    display: flex; align-items: flex-end; padding: 8px 10px;
+  }
+  .swatch span { font-size: 10px; font-weight: 600; line-height: 1.2; color: rgba(255,255,255,0.85); }
+  .swatch.light span { color: rgba(0,0,0,0.5); }
+  .label { font-size: 10px; font-weight: 600; color: #9EA5E9; text-align: center; }
+  .hex { font-size: 9px; color: #64748B; text-align: center; }
+</style>
+</head>
+<body>
+  <div class="col">
+    <div class="swatch" style="background: #060F1E; border: 1px solid #1E3A5F;"><span>Глубокий</span></div>
+    <div class="label">Deep BG</div>
+    <div class="hex">#060F1E</div>
+  </div>
+  <div class="col">
+    <div class="swatch" style="background: #0A162B;"><span>Основной</span></div>
+    <div class="label">Main BG</div>
+    <div class="hex">#0A162B</div>
+  </div>
+  <div class="col">
+    <div class="swatch" style="background: #0F2544;"><span>Карточки</span></div>
+    <div class="label">Cards</div>
+    <div class="hex">#0F2544</div>
+  </div>
+  <div class="col">
+    <div class="swatch" style="background: #1E3A5F;"><span>Обводки</span></div>
+    <div class="label">Borders</div>
+    <div class="hex">#1E3A5F</div>
+  </div>
+  <div class="col">
+    <div class="swatch light" style="background: #F0F4FF;"><span>Светлый</span></div>
+    <div class="label">Light BG</div>
+    <div class="hex">#F0F4FF</div>
+  </div>
+  <div class="col">
+    <div class="swatch light" style="background: #FFFFFF; border: 1px solid #1E3A5F;"><span>Белый</span></div>
+    <div class="label">White</div>
+    <div class="hex">#FFFFFF</div>
+  </div>
+</body>
+</html>

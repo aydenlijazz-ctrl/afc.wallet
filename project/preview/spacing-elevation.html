@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body { background: #1a1a1a; padding: 24px 28px; display: flex; align-items: center; justify-content: center; gap: 16px; min-height: 100vh; }
+  .level {
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+  }
+  .surface {
+    width: 100px; height: 64px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .surface span {
+    font-family: var(--font-body); font-size: 10px; font-weight: 600;
+    color: rgba(255,255,255,0.7);
+  }
+  .label {
+    font-family: var(--font-body); font-size: 11px; font-weight: 600;
+    color: var(--color-on-dark);
+  }
+  .val {
+    font-family: var(--font-body); font-size: 10px; color: var(--color-stone);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="level">
+    <div class="surface" style="background: #000; border: 1px solid rgba(255,255,255,0.08);"><span>L0 Flat</span></div>
+    <div class="label">Canvas</div>
+    <div class="val">#000000</div>
+  </div>
+  <div class="level">
+    <div class="surface" style="background: #0a0a0a;"><span>L1 Deep</span></div>
+    <div class="label">Deep</div>
+    <div class="val">#0a0a0a</div>
+  </div>
+  <div class="level">
+    <div class="surface" style="background: #16181a;"><span>L2 Elevated</span></div>
+    <div class="label">Elevated</div>
+    <div class="val">#16181a</div>
+  </div>
+  <div class="level">
+    <div class="surface" style="background: #494fdf;"><span>L3 Featured</span></div>
+    <div class="label">Featured</div>
+    <div class="val">#494fdf</div>
+  </div>
+</body>
+</html>

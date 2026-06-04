@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body { background: #000; padding: 24px 28px; display: flex; align-items: center; justify-content: center; gap: 14px; min-height: 100vh; flex-wrap: wrap; }
+  button {
+    border: none; cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 16px; font-weight: 600;
+    letter-spacing: 0.24px;
+    line-height: 1.5;
+    height: 48px;
+    padding: 14px 28px;
+    border-radius: 9999px;
+    transition: background 0.2s ease;
+  }
+  .primary { background: #fff; color: #000; }
+  .primary:hover { background: #e8e8e8; }
+  .outline-dark {
+    background: #000; color: #fff;
+    border: 1px solid #fff;
+    padding: 13px 27px;
+  }
+  .outline-dark:hover { background: rgba(255,255,255,0.06); }
+  .label {
+    font-family: var(--font-body); font-size: 10px; color: var(--color-stone);
+    text-align: center; margin-top: 4px;
+  }
+  .col { display: flex; flex-direction: column; align-items: center; }
+</style>
+</head>
+<body>
+  <div class="col">
+    <button class="primary">Get started</button>
+    <div class="label">button-primary</div>
+  </div>
+  <div class="col">
+    <button class="outline-dark">Learn more</button>
+    <div class="label">button-outline-dark</div>
+  </div>
+</body>
+</html>

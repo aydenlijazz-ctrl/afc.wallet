@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body { background: #000; padding: 0; display: flex; flex-direction: column; min-height: 100vh; justify-content: center; }
+  .hero {
+    padding: 48px 40px;
+    display: flex; flex-direction: column; gap: 20px;
+  }
+  .hero h1 {
+    font-family: var(--font-display);
+    font-size: 56px; font-weight: 500;
+    line-height: 1.0; letter-spacing: -1.12px;
+    color: #fff;
+  }
+  .hero p {
+    font-family: var(--font-body);
+    font-size: 18px; font-weight: 400;
+    line-height: 1.56; letter-spacing: -0.09px;
+    color: rgba(255,255,255,0.72);
+    max-width: 440px;
+  }
+  .hero-actions {
+    display: flex; gap: 12px; margin-top: 4px;
+  }
+  .hero-actions button {
+    border: none; cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 16px; font-weight: 600;
+    letter-spacing: 0.24px; line-height: 1.5;
+    height: 48px; padding: 14px 28px;
+    border-radius: 9999px;
+  }
+  .btn-primary { background: #fff; color: #000; }
+  .btn-outline {
+    background: transparent; color: #fff;
+    border: 1px solid #fff !important;
+    padding: 13px 27px;
+  }
+</style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Your money,<br>simplified</h1>
+    <p>One account for spending, saving, investing, and managing your finances across borders.</p>
+    <div class="hero-actions">
+      <button class="btn-primary">Get started</button>
+      <button class="btn-outline">Learn more</button>
+    </div>
+  </div>
+</body>
+</html>

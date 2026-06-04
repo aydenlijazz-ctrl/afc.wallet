@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body { background: #f4f4f4; padding: 20px; display: flex; align-items: center; justify-content: center; gap: 16px; min-height: 100vh; }
+  .card {
+    width: 200px; padding: 24px; border-radius: 20px;
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .card-light {
+    background: #fff; border: 1px solid #e2e2e7;
+  }
+  .card-dark {
+    background: #16181a;
+  }
+  .card-featured {
+    background: #494fdf;
+  }
+  .card h3 {
+    font-family: var(--font-display); font-size: 20px; font-weight: 500;
+    line-height: 1.4;
+  }
+  .card p {
+    font-family: var(--font-body); font-size: 14px; font-weight: 400;
+    line-height: 1.43;
+  }
+  .card-light h3 { color: #191c1f; }
+  .card-light p { color: #505a63; }
+  .card-dark h3 { color: #fff; }
+  .card-dark p { color: rgba(255,255,255,0.72); }
+  .card-featured h3 { color: #fff; }
+  .card-featured p { color: rgba(255,255,255,0.85); }
+  .label {
+    font-family: var(--font-body); font-size: 10px; color: var(--color-stone);
+    text-align: center; margin-top: 4px;
+  }
+  .col { display: flex; flex-direction: column; align-items: center; }
+</style>
+</head>
+<body>
+  <div class="col">
+    <div class="card card-light">
+      <h3>Standard</h3>
+      <p>Free account with essential features</p>
+    </div>
+    <div class="label">feature-card-light</div>
+  </div>
+  <div class="col">
+    <div class="card card-dark">
+      <h3>Premium</h3>
+      <p>Priority support and travel perks</p>
+    </div>
+    <div class="label">feature-card-dark</div>
+  </div>
+  <div class="col">
+    <div class="card card-featured">
+      <h3>Metal</h3>
+      <p>Exclusive cashback and insurance</p>
+    </div>
+    <div class="label">plan-card-featured</div>
+  </div>
+</body>
+</html>

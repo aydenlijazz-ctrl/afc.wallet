@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body { background: #000; padding: 24px 28px; display: flex; flex-direction: column; justify-content: center; gap: 10px; min-height: 100vh; }
+  .row { display: flex; align-items: baseline; gap: 16px; }
+  .sample {
+    font-family: var(--font-display);
+    font-weight: 500;
+    color: #fff;
+    white-space: nowrap;
+  }
+  .meta {
+    font-family: var(--font-body); font-size: 11px; color: var(--color-stone);
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+  <div class="row">
+    <span class="sample" style="font-size: 32px; line-height: 1.19; letter-spacing: -0.32px;">Plan comparison</span>
+    <span class="meta">heading-lg · 32px / 500</span>
+  </div>
+  <div class="row">
+    <span class="sample" style="font-size: 24px; line-height: 1.33;">Section sub-title</span>
+    <span class="meta">heading-md · 24px / 500</span>
+  </div>
+  <div class="row">
+    <span class="sample" style="font-size: 20px; line-height: 1.4;">Prominent label</span>
+    <span class="meta">heading-sm · 20px / 500</span>
+  </div>
+</body>
+</html>

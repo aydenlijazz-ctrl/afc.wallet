@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body { background: #f4f4f4; padding: 24px 28px; display: flex; align-items: center; justify-content: center; gap: 16px; min-height: 100vh; flex-wrap: wrap; }
+  .token {
+    display: flex; align-items: center; gap: 10px;
+    background: #fff; border-radius: 8px; padding: 8px 14px;
+  }
+  .block {
+    background: var(--color-primary);
+    flex-shrink: 0;
+  }
+  .info {
+    font-family: var(--font-body); font-size: 11px; color: var(--color-ink);
+    display: flex; flex-direction: column; gap: 1px;
+  }
+  .info .name { font-weight: 600; }
+  .info .val { color: var(--color-mute); }
+</style>
+</head>
+<body>
+  <div class="token"><div class="block" style="width:4px; height:20px; border-radius:1px;"></div><div class="info"><span class="name">xxs</span><span class="val">4px</span></div></div>
+  <div class="token"><div class="block" style="width:6px; height:20px; border-radius:1px;"></div><div class="info"><span class="name">xs</span><span class="val">6px</span></div></div>
+  <div class="token"><div class="block" style="width:8px; height:20px; border-radius:2px;"></div><div class="info"><span class="name">sm</span><span class="val">8px</span></div></div>
+  <div class="token"><div class="block" style="width:14px; height:20px; border-radius:3px;"></div><div class="info"><span class="name">md</span><span class="val">14px</span></div></div>
+  <div class="token"><div class="block" style="width:16px; height:20px; border-radius:3px;"></div><div class="info"><span class="name">lg</span><span class="val">16px</span></div></div>
+  <div class="token"><div class="block" style="width:24px; height:20px; border-radius:4px;"></div><div class="info"><span class="name">xl</span><span class="val">24px</span></div></div>
+  <div class="token"><div class="block" style="width:32px; height:20px; border-radius:4px;"></div><div class="info"><span class="name">xxl</span><span class="val">32px</span></div></div>
+  <div class="token"><div class="block" style="width:48px; height:20px; border-radius:4px;"></div><div class="info"><span class="name">xxxl</span><span class="val">48px</span></div></div>
+</body>
+</html>

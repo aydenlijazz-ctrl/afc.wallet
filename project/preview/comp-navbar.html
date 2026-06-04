@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body { background: #000; padding: 0; display: flex; flex-direction: column; min-height: 100vh; }
+  .nav {
+    height: 64px; background: #000;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+  }
+  .nav-logo {
+    font-family: var(--font-display); font-size: 20px; font-weight: 500;
+    color: #fff; letter-spacing: -0.4px;
+  }
+  .nav-links {
+    display: flex; gap: 28px; align-items: center;
+  }
+  .nav-links a {
+    font-family: var(--font-body); font-size: 16px; font-weight: 600;
+    color: rgba(255,255,255,0.72); text-decoration: none;
+    letter-spacing: 0.24px;
+    transition: color 0.2s ease;
+  }
+  .nav-links a:hover { color: #fff; }
+  .nav-right {
+    display: flex; gap: 12px; align-items: center;
+  }
+  .nav-right a {
+    font-family: var(--font-body); font-size: 16px; font-weight: 600;
+    color: rgba(255,255,255,0.72); text-decoration: none;
+    letter-spacing: 0.24px;
+  }
+  .nav-cta {
+    background: #fff; color: #000;
+    font-family: var(--font-body); font-size: 14px; font-weight: 600;
+    border: none; border-radius: 9999px;
+    padding: 8px 20px; height: 36px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <nav class="nav">
+    <span class="nav-logo">afc.wallet</span>
+    <div class="nav-links">
+      <a href="#">Personal</a>
+      <a href="#">Business</a>
+      <a href="#">Company</a>
+    </div>
+    <div class="nav-right">
+      <a href="#">Log in</a>
+      <button class="nav-cta">Get started</button>
+    </div>
+  </nav>
+</body>
+</html>

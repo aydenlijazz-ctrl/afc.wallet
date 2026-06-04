@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body { background: #f4f4f4; padding: 24px 28px; display: flex; align-items: center; justify-content: center; gap: 20px; min-height: 100vh; }
+  .demo {
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+  }
+  .shape {
+    width: 72px; height: 48px; background: var(--color-primary);
+  }
+  .label {
+    font-family: var(--font-body); font-size: 11px; color: var(--color-ink);
+    font-weight: 600; text-align: center;
+  }
+  .val {
+    font-family: var(--font-body); font-size: 10px; color: var(--color-mute);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="demo">
+    <div class="shape" style="border-radius: 0;"></div>
+    <div class="label">none</div>
+    <div class="val">0px</div>
+  </div>
+  <div class="demo">
+    <div class="shape" style="border-radius: 8px;"></div>
+    <div class="label">sm</div>
+    <div class="val">8px</div>
+  </div>
+  <div class="demo">
+    <div class="shape" style="border-radius: 12px;"></div>
+    <div class="label">md</div>
+    <div class="val">12px</div>
+  </div>
+  <div class="demo">
+    <div class="shape" style="border-radius: 20px;"></div>
+    <div class="label">lg</div>
+    <div class="val">20px</div>
+  </div>
+  <div class="demo">
+    <div class="shape" style="border-radius: 28px;"></div>
+    <div class="label">xl</div>
+    <div class="val">28px</div>
+  </div>
+  <div class="demo">
+    <div class="shape" style="border-radius: 9999px;"></div>
+    <div class="label">full</div>
+    <div class="val">9999px</div>
+  </div>
+</body>
+</html>

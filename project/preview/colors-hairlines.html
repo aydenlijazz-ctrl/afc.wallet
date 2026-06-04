@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body {
+    background: #060F1E;
+    padding: 24px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    min-height: 100vh;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  .pair {
+    display: flex; flex-direction: column; gap: 6px; width: 100%;
+  }
+  .divider { height: 2px; border-radius: 1px; }
+  .label { font-size: 11px; color: #94A3B8; display: flex; justify-content: space-between; }
+  .label span:last-child { color: #64748B; }
+</style>
+</head>
+<body>
+  <div class="pair">
+    <div class="divider" style="background: #1E3A5F;"></div>
+    <div class="label"><span>Обводки / Borders</span><span>#1E3A5F</span></div>
+  </div>
+  <div class="pair">
+    <div class="divider" style="background: rgba(255,255,255,0.12);"></div>
+    <div class="label"><span>Hairline Dark</span><span>rgba(255,255,255,0.12)</span></div>
+  </div>
+  <div class="pair">
+    <div class="divider" style="background: rgba(255,255,255,0.06);"></div>
+    <div class="label"><span>Divider Soft</span><span>rgba(255,255,255,0.06)</span></div>
+  </div>
+</body>
+</html>
